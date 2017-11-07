@@ -85,7 +85,7 @@ public class CreateIssueTests extends ApiTest {
                 when().
                 post("").
                 then().
-                statusCode(425).
+                statusCode(422).
                 body("message", equalTo("Invalid request.\n\n\"title\" wasn't supplied."));
     }
 }
